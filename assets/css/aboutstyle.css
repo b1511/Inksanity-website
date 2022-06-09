@@ -86,6 +86,12 @@ span {
     font-size: 24px;
 }
 
+/*section 2 Studio*/
+
+.blue {
+    padding-left: 130px;
+}
+
 /*footor*/
 footer {
     display: flex;
