@@ -60,6 +60,8 @@ header {
 
 .storysec img {
     margin: 50px 0 50px 0;
+    width: 750px;
+    height: auto;
 }
 
 /*text sec*/
