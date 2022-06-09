@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inksanity</title>
+    <link rel="stylesheet" href="./assets/contact-style.css">
+    <script src="./assets/contact-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <ul class="navbar">
+            <li></li><a href="#">Home</a></li>
+            <li></li><a href="#">Artist & Work</a></li>
+            <li></li><a href="#">About</a></li>
+            <li></li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <form id="form" class="contact-form" method="post">
+            <h1>Contact us</h1>
+            <!--name-->
+            <div class="formgroup">
+                <input type="name" name="name" id="name" placeholder="enter your name"/>
+            </div>
+
+            <!-- email -->
+            <div class="formgroup">
+                <input type="email" name="email" id="email" placeholder="enter your email"/>
+            </div>
+
+            <!--subject-->
+            <div class="formgroup">
+                <input type="subject" name="subject" id="subject" placeholder="enter subject"/>
+            </div>
+
+            <!--message-->
+            <div class="formgroup formgroup-msg">
+                <input class="message" type="message" name="message" placeholder="enter your message"></input>
+            </div>
+            <button type="submit" id="btn">Submit</button>
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </main>
+</body>
+</html>

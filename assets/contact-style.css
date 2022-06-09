@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); /*font-family: 'Hind', sans-serif;*/
+
+:root {
+    --dark-grey: #222831;
+    --light-grey: #393E46;
+    --white: #EEEEEE;
+    --blue: #0092CA;
+}
+
+body {
+    margin: 0;
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+/*navigation*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    height: 100px;
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+.navbar {
+    margin-right: 50px;
+    align-self: flex-start;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.navbar a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*contact form*/
+main {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 50px 0;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-form {
+    width: 700px;
+    height: 70vh;
+    background-color: #393E46;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formgroup {
+    width: 500px;
+    height: 6vh;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #0092CA;
+    border-radius: 10px;
+    outline: none;
+}
+
+input {
+    background-color: #393E46;
+    outline: none;
+    border: none;
+    padding-top: 15px;
+    font-family: 'Hind', sans-serif;
+}
+
+.formgroup-msg {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 80px;
+    height: 36px;
+    border: 3px solid #0092CA;
+    border-radius: 8px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    font-family: 'Hind', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+}
