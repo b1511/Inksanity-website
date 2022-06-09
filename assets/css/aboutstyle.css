@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); /*font-family: 'Hind', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); 
+/*font-family: 'Hind', sans-serif;*/
 
 :root {
     --dark-grey: #222831;
@@ -67,10 +68,14 @@ header {
     text-align: center;
     font-size: 36px;
     text-transform: uppercase;
+    line-height: 35px;
+    margin: 0;
+    width: 450px;
 }
 
-span .blue {
+span {
     color: var(--blue);
+    padding-left: 200px;
 }
 
 .text p {
