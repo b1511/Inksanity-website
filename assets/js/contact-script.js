@@ -22,9 +22,20 @@ btn.addEventListener('click', function(e){
 });
 
 
-fetch("./data.js")
-.then(response => {
-  return response.json()
-})
-.then(jsondata => console.log(jsondata))
- 
+const main = document.querySelector('main');
+const url = 'data.js';
+window.addEventListener('load', reqData);
+
+function reqData(){
+  fetch(url)
+  .then(Response => Result.json())
+  .then(data => {
+    console.log(data);
+  })
+};
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
