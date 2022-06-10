@@ -58,17 +58,20 @@ footer {
 
 .geninfo {
     text-align: center;
+    font-size: 20px;
 }
 
 .workhours {
     display: flex;
     gap: 30px;
+    font-size: 20px;
 }
 
 .mediainfo {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
+    font-size: 20px;
 }
 
 .mediainfo a {
