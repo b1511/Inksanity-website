@@ -40,6 +40,7 @@ header {
 
 .navbar a {
     color: #EEEEEE;
+    position: relative;
     text-decoration: none;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
