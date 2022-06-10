@@ -22,14 +22,13 @@ btn.addEventListener('click', function(e){
 });
 
 
-const main = document.querySelector('main');
-const url = 'data.js';
-window.addEventListener('load', reqData);
+let http = new XMLHttpRequest();
+http.open('get', 'data.js', true);
+http.send();
 
-function reqData(){
-  fetch(url)
-  .then(Response => Result.json())
-  .then(data => {
-    console.log(data);
-  })
-};
+http.onload = function(){
+  if(this.readyState == 4 && this.status == 200){
+    let data = JSON.parse(this.responseText);
+    let output = "";
+  }
+}
