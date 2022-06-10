@@ -47,7 +47,7 @@ header {
 }
 
 /*hover effects*/
-a::after {
+.navbar a::after {
     content: '';
     position: absolute;
     width: 100%;
