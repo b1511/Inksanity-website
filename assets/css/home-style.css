@@ -51,11 +51,30 @@ footer p {
 }
 
 /*navigation*/
+.video {
+    position: fixed;
+    z-index: -1;
+    filter: opacity(35%);
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
 header {
     display: flex;
     justify-content: space-between;
     height: 500px;
-    margin-bottom: 5px;
 }
 
 .logo {
@@ -150,6 +169,7 @@ h2 {
 /*main 2nd section*/
 .lightgrey {
     padding: 50px 0;
+    background-color: var(--light-grey);
 }
 
 .contact {
@@ -274,7 +294,6 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     background-color: #0092CA;
-    margin-top: 70px;
     padding-top: 16px;
 }
 
