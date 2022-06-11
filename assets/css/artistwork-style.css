@@ -126,14 +126,65 @@ header {
     align-items: center;
     background-color: #393E46;
     border-radius: 30px;
-    width: 360px;
+    width: 300px;
     padding-bottom: 20px;
 }
 
 .profile img {
-    width: 200px;
+    width: 150px;
     margin-top: 20px;
 }
+
+.arrow {
+    background-color: #393E46;
+    border: 3px solid #0092CA;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    padding-right: 3px;
+    padding-top: 4px;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+/*gallery*/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 20px;
+    background-color: #393E46;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 300px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.descript {
+    font-family: 'Montserrat', sans-serif;
+    align-self: center;
+    text-align: center;
+    width: 36ch;
+    margin-bottom: 30px;
+}
+
+/*second artist*/
+.artistJH {
+    display: none;
+}
+
 
 /*footer*/
 footer {
