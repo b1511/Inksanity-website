@@ -288,6 +288,12 @@ h2 {
     margin-left: 47%;
 }
 
+.copyright {
+    font-size: 12px;
+    text-align: right;
+    margin-right: 50px;
+}
+
 /*footer*/
 footer {
     display: flex;
