@@ -14,6 +14,41 @@ body {
     color: #EEEEEE;
 }
 
+h1 {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Hind', sans-serif;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /*navigation*/
 header {
     display: flex;
@@ -68,28 +103,25 @@ header {
     }
 
 /*main 1st section*/
-.h1, .h2 {
-    font-family: 'Montserrat', sans-serif;
+.h2, .h3 {
     text-align: center;
     margin-top: 0;
 }
 
-h1 {
+h2 {
     margin-bottom: 10px;
-    font-size: 38px;
 }
 
-.h2 {
-    font-size: 36px;
+.h3 {
     margin-top: 5px;
     margin-bottom: 30px;
 }
 
-.h2-light {
+.h3-light {
     font-weight: 200;
 }
 
-.h2-blue {
+.h3-blue {
     color: #0092CA;
     font-weight: 200;
 }
@@ -103,15 +135,10 @@ h1 {
     display: flex;
     text-align: center;
     justify-content: space-evenly;
-    font-family: 'Hind', sans-serif;
 }
 
-.text, .h3 {
+.text, .h4 {
     margin: 0;
-}
-
-h3 {
-    font-size: 28px;
 }
 
 .darkgrey {
@@ -126,16 +153,15 @@ h3 {
 
 .contact {
     display: flex;
-    font-family: 'Hind', sans-serif;
     justify-content: space-evenly;
     margin-left: 40px;
 }
 
-.h3 {
+.h4 {
     text-align: center;
 }
 
-.h3-underline {
+.h4-underline {
     border-bottom: 5px solid #0092CA;
     border-radius: 3px;
 }
@@ -150,8 +176,10 @@ h3 {
     color: #EEEEEE;
     border: 3px solid #0092CA;
     border-radius: 8px;
-    padding: 1px 10px;
-    font-family: 'Hind', sans-serif;
+    padding: 4px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
 }
 
 .mediainfo, .location {
@@ -172,7 +200,6 @@ h3 {
 .reviews {
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Hind', sans-serif
 }
 
 .person {
@@ -180,7 +207,7 @@ h3 {
     flex-direction: column;
 }
 
-.person h4 {
+.person h5 {
     text-align: center;
     margin-bottom: 0;
 }
@@ -204,7 +231,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Hind', sans-serif;
     background-color: #0092CA;
     margin-top: 70px;
     padding-top: 16px;
@@ -223,11 +249,13 @@ footer {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
+    font-family: 'Hind', sans-serif;
 }
 
 .mediainfo a {
     text-decoration: none;
     color: #EEEEEE;
+    font-weight: bold;
 }
 
 .mediaicon {

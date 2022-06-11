@@ -15,6 +15,26 @@ body {
     color: #EEEEEE;
 }
 
+h1 {
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Hind', sans-serif;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /*header and nav*/
 
 header {
@@ -78,7 +98,6 @@ a:hover::after {
 .storysec {
     display: flex;
     justify-content: space-evenly;
-    font-family: 'Hind', sans-serif;
     align-items: center;
 }
 
@@ -92,7 +111,6 @@ a:hover::after {
 
 .text h2 {
     text-align: center;
-    font-size: 36px;
     text-transform: uppercase;
     line-height: 1;
     margin: 0;
@@ -101,13 +119,13 @@ a:hover::after {
 
 span {
     color: var(--blue);
-    padding-left: 200px;
+    padding-left: 190px;
 }
 
 .text p {
     width: 650px;
     text-align: left;
-    font-size: 24px;
+    margin-top: 30px;
 }
 
 /*section 2 Studio*/
@@ -121,7 +139,6 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-family: 'Hind', sans-serif;
     background-color: #0092CA;
     margin-top: 70px;
     padding-top: 16px;
@@ -129,20 +146,18 @@ footer {
 
 .geninfo {
     text-align: center;
-    font-size: 20px;
 }
 
 .workhours {
     display: flex;
     gap: 30px;
-    font-size: 20px;
 }
 
 .mediainfo {
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
-    font-size: 20px;
+    font-family: 'Hind', sans-serif;
 }
 
 .mediainfo a {

@@ -23,14 +23,13 @@ btn.addEventListener('click', function(e){
 });
 */
 
-
+/*
 fetch('http://127.0.0.1:5500/assets/js/data.js')
   .then(response => response.json())
   .then(data => console.log(data));
+*/
 
 
-
-/*
 console.log("Fetch about to begin");
 fetch('http://127.0.0.1:5500/images/logo.png')
   .then(Response => {
@@ -41,5 +40,4 @@ fetch('http://127.0.0.1:5500/images/logo.png')
     console.log(blob);
     document.getElementById('logo').src = URL.createObjectURL(blob);
   });
-*/
 
