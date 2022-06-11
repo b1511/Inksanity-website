@@ -22,13 +22,6 @@ btn.addEventListener('click', function(e){
 });
 
 
-let http = new XMLHttpRequest();
-http.open('get', 'data.js', true);
-http.send();
-
-http.onload = function(){
-  if(this.readyState == 4 && this.status == 200){
-    let data = JSON.parse(this.responseText);
-    let output = "";
-  }
-}
+fetch('http://127.0.0.1:5500/assets/js/data.js')
+  .then(Response => Response.json())
+  .then(data => console.log(data))
