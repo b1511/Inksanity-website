@@ -172,19 +172,62 @@ h2 {
     font-size: 16px;
 }
 
-.button {
-    text-decoration: none;
-    color: #EEEEEE;
-    border: 3px solid #0092CA;
+.btn {
+    border: 3px solid;
+    background: none;
+    border-color: #0092CA;
     border-radius: 8px;
-    padding: 4px 10px;
-    font-family: 'Montserrat', sans-serif;
+    padding: 4px 8px;
     font-size: 16px;
-    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*btn hover*/
+.btn:hover {
+    background-color: #0092CA;
+    padding: 6px 10px;
+    transition: 0.3s;
+}
+/*btn 2 style and hover*/
+.btn2container {
+    text-align: center;
+}
+
+.btn2 {
+    border: 3px solid;
+    background: none;
+    border-color: #0092CA;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn2 a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn2:hover {
+    background-color: #0092CA;
+    padding: 6px 10px;
+    transition: 0.3s;
 }
 
 .mediainfo, .location {
     text-align: center;
+}
+
+.mediainfo {
+    margin-top: 16px;
 }
 
 
