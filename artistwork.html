@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inksanity</title>
     <link rel="stylesheet" href="./assets/css/artistwork-style.css">
+    <script src="./assets//js/function hide show.js" defer></script>
 </head>
 <body>
     <header>
@@ -19,9 +20,7 @@
     </header>
     <main>
         <section class="darkgrey">
-            <div class="artistSA">
                 <div class="artistOverview">
-                    <button class="arrow arrow-left"><img src="./images/right-arrow.png" alt="arrow-icon"></button>
                     <div class="profile">
                         <img src="./images/SA.png" width="200px" alt="owner">
                         <h3 class="underline">Inksanity Team</h3>
@@ -29,34 +28,38 @@
                         <p>Role: Owner/main artist</p>
                         <p>Colours: Black work</p>
                     </div>
-                    <button class="arrow"><img src="./images/right-arrow.png" alt="arrow-icon"></button>
+                    <button id="buttonSA" class="arrow">show/hide artwork</button>
                 </div>
-                <div class="gallery">
-                    <p class="descript">A versatile artist, experienced in creating tattoos in different styles.
-                        Specialized in working with black & grey ink, and realism.</p>
-                    <div class="row">
-                        <img src="images/SAwork1.jpg">
-                        <img src="images/SAwork2.jpg">
-                        <img src="images/SAwork3.jpg">
-                    </div>
-                    <div class="row">
-                        <img src="images/SAwork4.jpg">
-                        <img src="images/SAwork5.jpg">
-                        <img src="images/SAwork6.jpg">
+                <div class="hidden" id="hiddenSA">
+                    <div class="gallery">
+                        <p class="descript">A versatile artist, experienced in creating tattoos in different styles.
+                            Specialized in working with black & grey ink, and realism.</p>
+                        <div class="row">
+                            <img src="images/SAwork1.jpg">
+                            <img src="images/SAwork2.jpg">
+                            <img src="images/SAwork3.jpg">
+                        </div>
+                        <div class="row">
+                            <img src="images/SAwork4.jpg">
+                            <img src="images/SAwork5.jpg">
+                            <img src="images/SAwork6.jpg">
+                        </div>
                     </div>
                 </div>
-                <div class="artistJH">
+
                     <div class="artistOverview">
-                        <button class="arrow arrow-left"><img src="./images/right-arrow.png" alt="arrow-icon"></button>
-                        <div class="profile">
+                        <div class="profile profile-JH">
                             <img src="./images/JH.png" width="200px" alt="owner">
                             <h3 class="underline">Inksanity Team</h3>
                             <p>Name: Jonas Holme</p>
                             <p>Role: Apprentice</p>
                             <p>Colours: Black work</p>
                         </div>
-                        <button class="arrow"><img src="./images/right-arrow.png" alt="arrow-icon"></button>
+                        <button class="arrow" id="buttonJH">show/hide artwork</button>
                     </div>
+
+
+                <div class="hidden" id="hiddenJH">
                     <div class="gallery">
                         <p class="descript">Young and passionate artist, who creates unique blackwork designs, inspired  both by old-skool and new-skool style. </p>
                         <div class="row">
@@ -70,9 +73,8 @@
                             <img src="images/JHwork6.png">
                         </div>
                     </div>
-            </div>
+                </div>
         </section>
-
     </main>
     <footer>
         <div class="geninfo">

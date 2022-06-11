@@ -105,9 +105,10 @@ header {
 
 .artistOverview {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .artistOverview p {
@@ -130,23 +131,25 @@ header {
     padding-bottom: 20px;
 }
 
+.profile-JH {
+    margin-top: 50px;
+}
+
 .profile img {
     width: 150px;
     margin-top: 20px;
 }
 
 .arrow {
-    background-color: #393E46;
+    color: #EEEEEE;
+    background-color: #222831;
     border: 3px solid #0092CA;
     border-radius: 50px;
     height: 50px;
-    width: 50px;
-    padding-right: 3px;
-    padding-top: 4px;
-}
-
-.arrow-left {
-    transform: rotate(180deg);
+    width: 100px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*gallery*/
@@ -180,8 +183,8 @@ header {
     margin-bottom: 30px;
 }
 
-/*second artist*/
-.artistJH {
+/*hidden galleries*/
+.hidden {
     display: none;
 }
 
