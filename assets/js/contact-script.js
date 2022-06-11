@@ -1,3 +1,4 @@
+/*attempt to make contact form working
 var btn = document.getElementById('btn');
 
 btn.addEventListener('click', function(e){
@@ -20,8 +21,17 @@ btn.addEventListener('click', function(e){
       message => alert(msg)
     );
 });
+*/
+
+console.log("Fetch about to begin");
+fetch('http://127.0.0.1:5500/images/logo.png')
+  .then(Response => {
+    console.log(Response);
+    return Response.blob();
+  })
+  .then(blob => {
+    console.log(blob);
+    document.getElementById('logo').src = URL.createObjectURL(blob);
+  });
 
 
-fetch('http://127.0.0.1:5500/assets/js/data.js')
-  .then(Response => Response.json())
-  .then(data => console.log(data))
