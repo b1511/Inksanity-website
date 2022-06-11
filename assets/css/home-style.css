@@ -46,7 +46,8 @@ p {
 
 footer p {
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
+    text-align: left;
 }
 
 /*navigation*/
@@ -186,9 +187,6 @@ h2 {
     text-align: center;
 }
 
-.mediainfo {
-    margin-top: 20px;
-}
 
 /*3rd section*/
 .darkgrey-artboard {
@@ -240,6 +238,10 @@ footer {
     text-align: center;
 }
 
+.geninfo p {
+    margin: 0;
+}
+
 .workhours {
     display: flex;
     gap: 30px;
@@ -250,15 +252,17 @@ footer {
     flex-direction: column;
     justify-self: flex-end;
     font-family: 'Hind', sans-serif;
+    text-align: left;
 }
 
 .mediainfo a {
     text-decoration: none;
     color: #EEEEEE;
-    font-weight: bold;
+    font-weight: 500;
+    margin: 0;
 }
 
 .mediaicon {
-    width: 20px;
+    width: 16px;
     padding-right: 10px;
 }
