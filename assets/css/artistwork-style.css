@@ -246,6 +246,11 @@ footer {
     text-decoration: none;
     color: #EEEEEE;
     font-size: 16px;
+    transition: transform .3s;
+}
+
+.mediainfo a:hover {
+    transform: scale(1.1);
 }
 
 .mediaicon {

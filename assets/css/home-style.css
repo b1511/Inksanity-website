@@ -321,6 +321,11 @@ footer {
     color: #EEEEEE;
     font-weight: 500;
     margin: 0;
+    transition: transform .3s;
+}
+
+.mediainfo a:hover {
+    transform: scale(1.1);
 }
 
 .mediaicon {

@@ -241,6 +241,11 @@ footer {
 .mediainfo a {
     text-decoration: none;
     color: #EEEEEE;
+    transition: transform .3s;
+}
+
+.mediainfo a:hover {
+    transform: scale(1.1);
 }
 
 .mediaicon {
