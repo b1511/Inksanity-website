@@ -127,6 +127,8 @@ header {
     padding-bottom: 5px;
 }
 
+
+
 .profile {
     display: flex;
     flex-direction: column;
@@ -201,6 +203,9 @@ header {
     text-align: center;
     width: 36ch;
     margin-bottom: 30px;
+    border-bottom: 3px solid #0092CA;
+    border-radius: 3px;
+    padding-bottom: 5px;
 }
 
 /*hidden galleries*/
