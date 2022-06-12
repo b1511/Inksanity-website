@@ -18,6 +18,10 @@ h1 {
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: auto;
+    margin-top: 0;
 }
 
 h2 {
@@ -48,6 +52,7 @@ footer p {
 /*navigation*/
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 500px;
     margin-bottom: 5px;
@@ -121,6 +126,8 @@ header {
     border-radius: 3px;
     padding-bottom: 5px;
 }
+
+
 
 .profile {
     display: flex;
@@ -196,6 +203,9 @@ header {
     text-align: center;
     width: 36ch;
     margin-bottom: 30px;
+    border-bottom: 3px solid #0092CA;
+    border-radius: 3px;
+    padding-bottom: 5px;
 }
 
 /*hidden galleries*/
@@ -234,6 +244,11 @@ footer {
     text-decoration: none;
     color: #EEEEEE;
     font-size: 16px;
+    transition: transform .3s;
+}
+
+.mediainfo a:hover {
+    transform: scale(1.1);
 }
 
 .mediaicon {
