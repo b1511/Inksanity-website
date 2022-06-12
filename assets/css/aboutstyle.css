@@ -128,6 +128,7 @@ span {
     text-align: left;
     margin-top: 30px;
 }
+
 /*sec3 see art*/
 .darkgrey2 {
     background-color: var(--dark-grey);
@@ -176,6 +177,33 @@ span {
 
 .blue {
     padding-left: 130px;
+}
+
+/*text animations*/
+@keyframes textanm1 {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.anm1 {
+    animation: textanm1 5s;
+}
+
+@keyframes textanm2 {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.anm2 {
+    animation: textanm2 5s;
 }
 
 /*footor*/

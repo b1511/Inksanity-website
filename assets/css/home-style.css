@@ -216,31 +216,13 @@ header {
     transition: 0.3s;
 }
 /*btn 2 style and hover*/
-.btn2container {
+.btncontainer {
     text-align: center;
 }
 
-.btn2 {
-    border: 3px solid;
-    background: none;
-    border-color: #0092CA;
-    border-radius: 8px;
-    padding: 4px 8px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer;
-}
-
-.btn2 a {
-    color: #EEEEEE;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn2:hover {
-    background-color: #0092CA;
-    padding: 6px 10px;
-    transition: 0.3s;
+.btn-art {
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .mediainfo, .location {
