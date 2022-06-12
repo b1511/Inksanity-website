@@ -152,11 +152,13 @@ header {
     color: #EEEEEE;
     background-color: #222831;
     border: 3px solid #0092CA;
+    padding: 4px 8px;
+    border-radius: 20px;
     border-radius: 50px;
     height: 60px;
     width: 120px;
     margin-bottom: 30px;
-    margin-top: 5px;
+    margin-top: 15px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     font-size: 16px;
