@@ -128,10 +128,20 @@ span {
     text-align: left;
     margin-top: 30px;
 }
+
 /*sec3 see art*/
 .darkgrey2 {
-    height: 500px;
     background-color: var(--dark-grey);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.darkgrey2 h2 {
+    margin-top: 0;
+}
+
+.collage {
+    height: 500px;
 }
 
 .btn2container {
@@ -147,6 +157,8 @@ span {
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .btn2 a {
@@ -165,6 +177,33 @@ span {
 
 .blue {
     padding-left: 130px;
+}
+
+/*text animations*/
+@keyframes textanm1 {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.anm1 {
+    animation: textanm1 5s;
+}
+
+@keyframes textanm2 {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.anm2 {
+    animation: textanm2 5s;
 }
 
 /*footor*/
