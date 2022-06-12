@@ -218,11 +218,31 @@ header {
 /*btn 2 style and hover*/
 .btncontainer {
     text-align: center;
+    padding-bottom: 0;
+    padding-top: 30px;
 }
 
 .btn-art {
-    margin-top: 30px;
-    margin-bottom: 50px;
+    border: 3px solid;
+    background: none;
+    border-color: #0092CA;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn-art a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*btn hover*/
+.btn-art:hover {
+    background-color: #0092CA;
+    padding: 6px 10px;
+    transition: 0.3s;
 }
 
 .mediainfo, .location {
@@ -236,7 +256,6 @@ header {
 
 /*3rd section*/
 .darkgrey-artboard {
-    height: 600px;
     text-align: center;
 }
 
