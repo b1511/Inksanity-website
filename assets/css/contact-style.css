@@ -17,6 +17,11 @@ body {
 h1 {
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: auto;
+    margin-top: 0;
+    text-align: center;
 }
 
 h2 {
@@ -48,6 +53,7 @@ footer p {
 header {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 500px;
     margin-bottom: 5px;
 }
