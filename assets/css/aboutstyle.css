@@ -104,7 +104,7 @@ a:hover::after {
 
 .storysec img {
     margin: 50px 0 50px 0;
-    width: 650px;
+    width: 500px;
     height: auto;
 }
 
@@ -114,7 +114,7 @@ a:hover::after {
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
-    margin: 0;
+    margin-top: 50px;
     width: 450px;
 }
 
@@ -124,9 +124,10 @@ span {
 }
 
 .text p {
-    width: 650px;
+    width: 500px;
     text-align: left;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 /*sec3 see art*/
@@ -239,4 +240,268 @@ footer {
 .mediaicon {
     width: 16px;
     padding-right: 10px;
+}
+/*tablet*/
+@media only screen and (max-width: 940px) {
+
+    .navbar li {
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+    
+    .storysec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .darkgrey .storysec img {
+        margin: 50px 0 50px 0;
+        width: 600px;
+        height: auto;
+    }
+
+    .darkgrey .storysec .text p {
+        width: 550px;
+        margin-bottom: 0;
+    }
+
+    .lightgrey .storysec {
+        flex-direction: column;
+    }
+
+    .lightgrey .storysec img{
+        width: 550px;
+    }
+
+    .lightgrey .storysec .text p {
+        width: 550px;
+        margin-bottom: 0;
+    }
+
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 50px;
+        width: 450px;
+    }
+    
+    span {
+        color: var(--blue);
+        padding-left: 190px;
+    }
+    
+    
+    /*sec3 see art*/
+    .darkgrey2 {
+        background-color: var(--dark-grey);
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .darkgrey2 h2 {
+        margin-top: 0;
+    }
+    
+    .darkgrey2 .collage {
+        height: 350px;
+    }
+
+}
+/*small screen/big tablet screen*/
+@media only screen and (max-width: 1050px) {
+/*text size*/
+    h1 {
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+/*text size*/
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+    
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .storysec img {
+        margin: 50px 0 50px 0;
+        width: 450px;
+        height: auto;
+    }
+    
+    /*text sec*/
+    
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 50px;
+        width: 450px;
+    }
+    
+    span {
+        color: var(--blue);
+        padding-left: 190px;
+    }
+    
+    .text p {
+        width: 450px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    /*sec3 see art*/
+    .darkgrey2 {
+        background-color: var(--dark-grey);
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .darkgrey2 h2 {
+        margin-top: 0;
+    }
+    
+    .collage {
+        height: 500px;
+    }
+}
+/*screen*/
+@media only screen and (min-width: 1100px) {
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+    
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .storysec img {
+        margin: 50px 0 50px 0;
+        width: 500px;
+        height: auto;
+    }
+    
+    /*text sec*/
+    
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 50px;
+        width: 450px;
+    }
+    
+    span {
+        color: var(--blue);
+        padding-left: 190px;
+    }
+    
+    .text p {
+        width: 500px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    /*sec3 see art*/
+    .darkgrey2 {
+        background-color: var(--dark-grey);
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .darkgrey2 h2 {
+        margin-top: 0;
+    }
+    
+    .collage {
+        height: 500px;
+    }
+}
+/*big screen*/
+@media only screen and (min-width: 1400px) {
+        /*Story section*/
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+    
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .storysec img {
+        margin: 50px 0 50px 0;
+        width: 650px;
+        height: auto;
+    }
+/*text sec*/
+
+.text h2 {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1;
+    margin: 0;
+    width: 450px;
+}
+
+span {
+    color: var(--blue);
+    padding-left: 190px;
+}
+
+.text p {
+    width: 650px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+/*sec3 see art*/
+.darkgrey2 {
+    background-color: var(--dark-grey);
+    text-align: center;
+    padding-top: 50px;
+}
+
+.darkgrey2 h2 {
+    margin-top: 0;
+}
+
+.collage {
+    height: 500px;
+}
 }
