@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 48px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     display: inline-block;
@@ -53,8 +53,7 @@ footer p {
     font-weight: 500;
     text-align: left;
 }
-
-/*navigation*/
+/*video background*/
 .video {
     position: fixed;
     z-index: -1;
@@ -74,7 +73,7 @@ footer p {
         height: auto;
     }
 }
-
+/*navigation*/
 header {
     display: flex;
     justify-content: space-between;

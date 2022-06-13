@@ -16,7 +16,7 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 46px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     display: inline-block;
@@ -39,6 +39,27 @@ footer p {
     font-size: 16px;
     font-weight: 500;
     text-align: left;
+}
+
+/*video backgound*/
+.video {
+    position: fixed;
+    z-index: -1;
+    filter: opacity(35%);
+}
+
+@media (min-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /*header and nav*/
@@ -134,6 +155,12 @@ span {
     text-align: left;
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+/*sec 2*/
+
+.lightgrey {
+    background-color: var(--light-grey);
 }
 
 /*sec3 see art*/
@@ -252,8 +279,25 @@ footer {
     width: 16px;
     padding-right: 10px;
 }
+/*small tablet*/
+@media only screen and (max-width: 700px) {
+    .video {
+        display: none;
+    }
+    .header {
+        background-color: #222831;
+    }
+    
+}
 /*tablet*/
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 920px) {
+
+    .video {
+        display: none;
+    }
+    .header {
+        background-image: url("images/poster.jpg");
+    }
 
     .navbar li {
         display: inline-block;
@@ -329,7 +373,7 @@ footer {
 /*small screen/big tablet screen*/
 @media only screen and (max-width: 1050px) {
 /*text size*/
-    h1 {
+    .header h1 {
         font-size: 32px;
         font-family: 'Montserrat', sans-serif;
     }
@@ -371,6 +415,10 @@ footer {
     }
     
     /*text sec*/
+
+    h1{
+        font-size: 30px;
+    }
     
     .text h2 {
         text-align: center;
@@ -408,7 +456,7 @@ footer {
     }
 }
 /*screen*/
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1050px) {
     .darkgrey {
         background-color: var(--dark-grey);
     }
@@ -426,7 +474,10 @@ footer {
     }
     
     /*text sec*/
-    
+    h1 {
+        font-size: 36px;
+    }
+
     .text h2 {
         text-align: center;
         text-transform: uppercase;
@@ -481,6 +532,10 @@ footer {
         height: auto;
     }
 /*text sec*/
+
+h1 {
+    font-size: 46px;
+}
 
 .text h2 {
     text-align: center;
