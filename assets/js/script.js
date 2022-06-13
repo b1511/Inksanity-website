@@ -29,9 +29,9 @@ fetch('http://127.0.0.1:5500/assets/js/data.js')
   .then(data => console.log(data));
 */
 
-/*attempt to display images from Wordpres*/
-console.log("Fetch about to begin");
+/*home page api calls--------------------------------- */
 
+/*logo*/
 function getLogo(){
   fetch("https://bo1511.one/wp-json/wp/v2/posts/156")
   .then((Response) => Response.json())
@@ -39,7 +39,7 @@ function getLogo(){
     renderLogo(data);
   })
 }
-getLogo()
+getLogo();
 
 
 function renderLogo(data) {
@@ -50,7 +50,99 @@ function renderLogo(data) {
   logoEl.classList.add('logo');
 
   const mainHead = document.getElementById("mainHead"); 
-  const videoEl = mainHead.firstElementChild; /*at this moment of execution the video is the first child element*/
-  mainHead.insertBefore(logoEl, videoEl); /*here we make the content as first child element */
+  const childEl = mainHead.firstElementChild; /*at this moment of execution the video is the first child element*/
+  mainHead.insertBefore(logoEl, childEl); /*here we make the content as first child element */
+};
+
+
+
+/*collage1*/
+function getColl(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/233")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderColl(data);
+  })
+}
+getColl();
+
+
+function renderColl(data) {
+  const url = data.acf;
+  const collEl = document.createElement('img');
+  collEl.setAttribute('src', url.image);
+  collEl.setAttribute('alt', 'collage');
+  collEl.classList.add('collage');
+
+  document.getElementById("box").appendChild(collEl);
+};
+
+
+/*about page api calls----------------------------------*/
+
+/*exterior image*/
+function getExtImg(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/244")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderExtImg(data);
+  })
+}
+getExtImg();
+
+
+function renderExtImg(data) {
+  const url = data.acf;
+  const imgEl = document.createElement('img');
+  imgEl.setAttribute('src', url.image);
+  imgEl.setAttribute('alt', 'exterior');
+
+  document.getElementById("ext").appendChild(imgEl);
 }
 
+
+
+/*interior image*/
+function getIntImg(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/248")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderIntImg(data);
+  })
+}
+getIntImg();
+
+
+function renderIntImg(data) {
+  const url = data.acf;
+  const imgEl = document.createElement('img');
+  imgEl.setAttribute('src', url.image);
+  imgEl.setAttribute('alt', 'interior');
+
+  document.getElementById("int").appendChild(imgEl);
+}
+
+
+
+/*collage2 */
+function getSecColl(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/238")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderSecColl(data);
+  })
+}
+getSecColl();
+
+
+function renderSecColl(data) {
+  const url = data.acf;
+  const collEl = document.createElement('img');
+  collEl.setAttribute('src', url.image);
+  collEl.setAttribute('alt', 'collage');
+  collEl.classList.add('collage');
+
+  document.getElementById("box2").appendChild(collEl);
+}
+
+/*artist page api calls------------------------------------------*/
