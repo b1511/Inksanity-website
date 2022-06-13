@@ -27,6 +27,7 @@ h1 {
 h2 {
     font-size: 32px;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 h3 {
@@ -36,6 +37,11 @@ h3 {
 
 h4 {
     font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 5px solid #0092CA;
+    border-radius: 3px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
 }
 
 p {
@@ -234,6 +240,44 @@ header {
     display: none;
 }
 
+/*services*/
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.services p {
+    width: 30ch;
+}
+
+span {
+    color: #0092CA;
+}
+
+/*instagram section*/
+.lightgrey {
+    background-color: #393E46;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+
+.follow p {
+    width: 24ch;
+}
+
+.lightgrey a {
+    text-decoration: none;
+    background-color: #393E46;
+    border-radius: 8px;
+}
 
 /*footer*/
 footer {
