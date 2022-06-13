@@ -136,7 +136,6 @@ a:hover::after {
 }
 
 /*text sec*/
-
 .text h2 {
     text-align: center;
     text-transform: uppercase;
@@ -279,24 +278,154 @@ footer {
     width: 16px;
     padding-right: 10px;
 }
-/*small tablet*/
-@media only screen and (max-width: 700px) {
-    .video {
-        display: none;
-    }
-    .header {
-        background-color: #222831;
-    }
-    
+
+@media only screen and (min-width: 1400px) {
+    /*Story section*/
+   .darkgrey {
+       background-color: var(--dark-grey);
+   }
+   
+   .storysec {
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+   
+   .storysec img {
+       margin: 50px 0 50px 0;
+       width: 650px;
+       height: auto;
+   }
+   /*text sec*/
+
+   h1 {
+       font-size: 46px;
+   }   
+
+   .text h2 {
+       text-align: center;
+       text-transform: uppercase;
+       line-height: 1;
+       margin: 0;
+       width: 450px;
+   }
+
+   span {
+       color: var(--blue);
+       padding-left: 190px;
+   }
+
+   .text p {
+       width: 650px;
+       text-align: left;
+       margin-top: 30px;
+   }
+
+   /*sec3 see art*/
+   .darkgrey2 {
+       background-color: var(--dark-grey);
+       text-align: center;
+       padding-top: 50px;
+   }
+
+   .darkgrey2 h2 {
+       margin-top: 0;
+   }
+
+   .collage {
+       height: 500px;
+   }
 }
-/*tablet*/
+
+@media only screen and (max-width: 1050px) {
+    /*text size*/
+        .header h1 {
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        h2 {
+            font-size: 28px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        p {
+            font-size: 16px;
+            font-family: 'Hind', sans-serif;
+        }
+    
+        footer p {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+        }
+    
+        footer {
+            font-size: 14px;
+        }
+        /*text size*/
+        .darkgrey {
+            background-color: var(--dark-grey);
+        }
+        
+        .storysec {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .storysec img {
+            margin: 50px 0 50px 0;
+            width: 450px;
+            height: auto;
+        }
+        
+        /*text sec*/
+    
+        h1{
+            font-size: 30px;
+        }
+        
+        .text h2 {
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 50px;
+            width: 450px;
+        }
+        
+        span {
+            color: var(--blue);
+            padding-left: 190px;
+        }
+        
+        .text p {
+            width: 450px;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        /*sec3 see art*/
+        .darkgrey2 {
+            background-color: var(--dark-grey);
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .darkgrey2 h2 {
+            margin-top: 0;
+        }
+        
+        .collage {
+            height: 500px;
+        }
+}
+
 @media only screen and (max-width: 920px) {
 
-    .video {
-        display: none;
-    }
-    .header {
-        background-image: url("images/poster.jpg");
+    header {
+        height: 300px;
     }
 
     .navbar li {
@@ -316,26 +445,17 @@ footer {
         align-items: center;
     }
 
-    .darkgrey .storysec img {
+    .storysec img {
         margin: 50px 0 50px 0;
         width: 600px;
         height: auto;
-    }
-
-    .darkgrey .storysec .text p {
-        width: 550px;
-        margin-bottom: 0;
     }
 
     .lightgrey .storysec {
         flex-direction: column;
     }
 
-    .lightgrey .storysec img{
-        width: 550px;
-    }
-
-    .lightgrey .storysec .text p {
+    .text p {
         width: 550px;
         margin-bottom: 0;
     }
@@ -353,33 +473,13 @@ footer {
         padding-left: 190px;
     }
     
-    
-    /*sec3 see art*/
-    .darkgrey2 {
-        background-color: var(--dark-grey);
-        text-align: center;
-        padding-top: 50px;
-    }
-    
-    .darkgrey2 h2 {
-        margin-top: 0;
-    }
-    
-    .darkgrey2 .collage {
-        height: 350px;
-    }
-
-}
-/*small screen/big tablet screen*/
-@media only screen and (max-width: 1050px) {
-/*text size*/
-    .header h1 {
-        font-size: 32px;
+    h1 {
+        font-size: 28px;
         font-family: 'Montserrat', sans-serif;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 26px;
         font-family: 'Montserrat', sans-serif;
     }
 
@@ -397,49 +497,7 @@ footer {
     footer {
         font-size: 14px;
     }
-/*text size*/
-    .darkgrey {
-        background-color: var(--dark-grey);
-    }
-    
-    .storysec {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .storysec img {
-        margin: 50px 0 50px 0;
-        width: 450px;
-        height: auto;
-    }
-    
-    /*text sec*/
 
-    h1{
-        font-size: 30px;
-    }
-    
-    .text h2 {
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 1;
-        margin-top: 50px;
-        width: 450px;
-    }
-    
-    span {
-        color: var(--blue);
-        padding-left: 190px;
-    }
-    
-    .text p {
-        width: 450px;
-        text-align: left;
-        margin-top: 30px;
-        margin-bottom: 50px;
-    }
-    
     /*sec3 see art*/
     .darkgrey2 {
         background-color: var(--dark-grey);
@@ -452,70 +510,123 @@ footer {
     }
     
     .collage {
-        height: 500px;
+        height: 350px;
     }
+
 }
-/*screen*/
-@media only screen and (min-width: 1050px) {
-    .darkgrey {
-        background-color: var(--dark-grey);
-    }
-    
-    .storysec {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    
-    .storysec img {
-        margin: 50px 0 50px 0;
-        width: 500px;
-        height: auto;
-    }
-    
-    /*text sec*/
+
+@media only screen and (max-width: 750px) {
+    /*text*/
     h1 {
-        font-size: 36px;
+        height: 50px;
+        font-size: 24px;
+        margin: 10px auto 10px auto;
+        font-family: 'Montserrat', sans-serif;
     }
 
-    .text h2 {
-        text-align: center;
-        text-transform: uppercase;
-        line-height: 1;
-        margin-top: 50px;
-        width: 450px;
+    h2 {
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
     }
-    
-    span {
-        color: var(--blue);
-        padding-left: 190px;
+
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
     }
-    
-    .text p {
-        width: 500px;
+
+
+    header {
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 500;
         text-align: left;
-        margin-top: 30px;
-        margin-bottom: 50px;
     }
-    
-    /*sec3 see art*/
-    .darkgrey2 {
-        background-color: var(--dark-grey);
-        text-align: center;
-        padding-top: 50px;
+
+    footer {
+        font-size: 14px;
     }
-    
-    .darkgrey2 h2 {
-        margin-top: 0;
+
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
     }
-    
+
+    .storysec img {
+        margin: 50px 0 50px 0;
+        width: 400px;
+        height: auto;
+    }
+
     .collage {
-        height: 500px;
+        width: 400px;
+        height: auto;
     }
 }
-/*big screen*/
-@media only screen and (min-width: 1400px) {
-        /*Story section*/
+
+@media only screen and (max-width: 550px) {
+
+
+    h1 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: auto;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px auto 20px auto;
+    }
+    
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    footer p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    header {
+     height: 250px;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        align-self: flex-start;
+        order: 3;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+    }
+    
+    .navbar a {
+        color: #EEEEEE;
+        position: relative;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+    /*storysection*/
     .darkgrey {
         background-color: var(--dark-grey);
     }
@@ -524,50 +635,41 @@ footer {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+        flex-direction: column-reverse;
     }
     
     .storysec img {
         margin: 50px 0 50px 0;
-        width: 650px;
+        width: 350px;
         height: auto;
     }
-/*text sec*/
 
-h1 {
-    font-size: 46px;
-}
+    /*text sec*/
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 30px;
+        width: 200px;
+    }
 
-.text h2 {
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 1;
-    margin: 0;
-    width: 450px;
-}
+    span {
+        color: var(--blue);
+        padding-left:0;
+    }
 
-span {
-    color: var(--blue);
-    padding-left: 190px;
-}
+    .text p {
+        width: 380px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .collage {
+        width: 350px;
+        height: auto;
+    }
 
-.text p {
-    width: 650px;
-    text-align: left;
-    margin-top: 30px;
-}
-
-/*sec3 see art*/
-.darkgrey2 {
-    background-color: var(--dark-grey);
-    text-align: center;
-    padding-top: 50px;
-}
-
-.darkgrey2 h2 {
-    margin-top: 0;
-}
-
-.collage {
-    height: 500px;
-}
+    footer {
+        flex-direction: column;
+    }
 }
