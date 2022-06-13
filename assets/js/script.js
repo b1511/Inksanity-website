@@ -23,17 +23,35 @@ btn.addEventListener('click', function(e){
 });
 */
 
-/*
+/* attempt to get image url from local data file and use it for img src
 fetch('http://127.0.0.1:5500/assets/js/data.js')
   .then(response => response.json())
   .then(data => console.log(data));
 */
 
-
+/*attempt to display images from Wordpres*/
 console.log("Fetch about to begin");
 
-fetch('http://127.0.0.1:5500/assets/js/data.js')
-  .then(response => response.json())
-  .then(data => console.log(data));
+function getData(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/156")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderData(data);
+  })
+}
+getData();
 
+
+function renderData(data) {
+  const url = data.acf;
+  const content = `
+  <img class="logo" src="${url.image}" alt="logo"/>`;
+  displayData('header', url)
+}
+renderData();
+
+function displayData(selector, newContent) {
+  document.querySelector(selector).innerHTML += newContent;
+}
+displayData();
 
