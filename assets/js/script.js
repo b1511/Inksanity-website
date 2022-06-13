@@ -32,26 +32,25 @@ fetch('http://127.0.0.1:5500/assets/js/data.js')
 /*attempt to display images from Wordpres*/
 console.log("Fetch about to begin");
 
-function getData(){
+function getLogo(){
   fetch("https://bo1511.one/wp-json/wp/v2/posts/156")
   .then((Response) => Response.json())
   .then((data) => {
-    renderData(data);
+    renderLogo(data);
   })
 }
-getData();
+getLogo()
 
 
-function renderData(data) {
+function renderLogo(data) {
   const url = data.acf;
-  const content = `
-  <img class="logo" src="${url.image}" alt="logo"/>`;
-  displayData('header', url)
-}
-renderData();
+  const logoEl = document.createElement('img');
+  logoEl.setAttribute('src', url.image);
+  logoEl.setAttribute('alt', 'logo');
+  logoEl.classList.add('logo');
 
-function displayData(selector, newContent) {
-  document.querySelector(selector).innerHTML += newContent;
+  const mainHead = document.getElementById("mainHead"); 
+  const videoEl = mainHead.firstElementChild; /*at this moment of execution the video is the first child element*/
+  mainHead.insertBefore(logoEl, videoEl); /*here we make the content as first child element */
 }
-displayData();
 
