@@ -144,8 +144,6 @@ function renderSecColl(data) {
   document.getElementById("box2").appendChild(collEl);
 };
 
-/*artist page api calls------------------------------------------*/
-
 /*video */
 function getVid(){
   fetch("https://bo1511.one/wp-json/wp/v2/posts/255")
