@@ -129,7 +129,8 @@ header {
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 70px;
     background-color: var(--dark-grey);
 }
 
@@ -171,7 +172,7 @@ input {
 }
 
 ::placeholder {
-    color: #222831;
+    color: #0092CA;
     font-family: 'Hind', sans-serif;
 }
 
@@ -199,8 +200,19 @@ button {
 }
 
 /*map*/
+.lightgrey {
+    background-color: #393E46;
+}
+
+.lightgrey h2 {
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
 .mapouter {
     margin: auto;
+    padding-top: 30px;
+    padding-bottom: 70px;
 }
 
 /*footer*/

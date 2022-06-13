@@ -55,7 +55,6 @@ function renderLogo(data) {
 };
 
 
-
 /*collage1*/
 function getColl(){
   fetch("https://bo1511.one/wp-json/wp/v2/posts/233")
@@ -98,7 +97,7 @@ function renderExtImg(data) {
   imgEl.setAttribute('alt', 'exterior');
 
   document.getElementById("ext").appendChild(imgEl);
-}
+};
 
 
 
@@ -120,7 +119,7 @@ function renderIntImg(data) {
   imgEl.setAttribute('alt', 'interior');
 
   document.getElementById("int").appendChild(imgEl);
-}
+};
 
 
 
@@ -143,6 +142,29 @@ function renderSecColl(data) {
   collEl.classList.add('collage');
 
   document.getElementById("box2").appendChild(collEl);
-}
+};
 
 /*artist page api calls------------------------------------------*/
+
+/*video */
+function getVid(){
+  fetch("https://bo1511.one/wp-json/wp/v2/posts/255")
+  .then((Response) => Response.json())
+  .then((data) => {
+    renderVid(data);
+  })
+}
+getVid();
+
+
+function renderVid(data) {
+  const url = data.acf;
+  const content = `
+  <video autoplay muted slowed loop plays-inline class="video" src="${url.video}" alt="video"/>`;
+  displayVid('header', content)
+}
+renderVid();
+
+function displayVid(selector, newContent) {
+  document.querySelector(selector).innerHTML += newContent;
+};
