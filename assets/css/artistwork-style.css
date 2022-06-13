@@ -241,6 +241,9 @@ header {
 }
 
 /*services*/
+.darkgrey-serv {
+    padding-top: 20px;
+}
 .services {
     display: flex;
     justify-content: space-evenly;
@@ -259,7 +262,7 @@ span {
 .lightgrey {
     background-color: #393E46;
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 
 .follow {
@@ -269,12 +272,18 @@ span {
     justify-content: center;
 }
 
-.follow p {
-    width: 24ch;
+.follow img {
+    height: 200px;
 }
 
-.lightgrey a {
-    text-decoration: none;
+.follow p {
+    width: 22ch;
+    align-self: center;
+}
+
+.btn {
+    display: flex;
+    margin: 20px auto;
     background-color: #393E46;
     border-radius: 8px;
 }
