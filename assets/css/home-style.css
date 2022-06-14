@@ -350,3 +350,517 @@ footer {
     width: 16px;
     padding-right: 10px;
 }
+
+@media only screen and (min-width: 1400px) {
+    /*Story section*/
+   .darkgrey {
+       background-color: var(--dark-grey);
+   }
+   
+   .storysec {
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+   
+   /*text sec*/
+
+   h1 {
+       font-size: 46px;
+   }   
+
+   .text h2 {
+       text-align: center;
+       text-transform: uppercase;
+       line-height: 1;
+       margin: 0;
+       width: 450px;
+   }
+
+   span {
+       color: var(--blue);
+       padding-left: 190px;
+   }
+
+   .text p {
+       width: 650px;
+       text-align: left;
+       margin-top: 30px;
+   }
+
+   /*sec3 see art*/
+   .darkgrey2 {
+       background-color: var(--dark-grey);
+       text-align: center;
+       padding-top: 50px;
+   }
+
+   .darkgrey2 h2 {
+       margin-top: 0;
+   }
+
+   .collage {
+       height: 500px;
+   }
+}
+
+@media only screen and (max-width: 1050px) {
+    /*text size*/
+        .header h1 {
+            font-size: 32px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        h2 {
+            font-size: 28px;
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        p {
+            font-size: 16px;
+            font-family: 'Hind', sans-serif;
+        }
+    
+        footer p {
+            font-size: 14px;
+            font-weight: 500;
+            text-align: left;
+        }
+    
+        footer {
+            font-size: 14px;
+        }
+        /*text size*/
+        .darkgrey {
+            background-color: var(--dark-grey);
+        }
+        
+        .storysec {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .storysec img {
+            margin: 50px 0 50px 0;
+            width: 450px;
+            height: auto;
+        }
+        
+        /*text sec*/
+        .lightgrey h2 span {
+            padding: 0;
+        }
+        
+        h1{
+            font-size: 30px;
+        }
+        
+        .text h2 {
+            text-align: center;
+            text-transform: uppercase;
+            line-height: 1;
+            margin-top: 50px;
+            width: 450px;
+        }
+        
+        span {
+            color: var(--blue);
+            padding-left: 190px;
+        }
+        
+        .text p {
+            width: 450px;
+            text-align: left;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        
+        /*sec3 see art*/
+        .darkgrey2 {
+            background-color: var(--dark-grey);
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .darkgrey2 h2 {
+            margin-top: 0;
+        }
+        
+        .collage {
+            height: 500px;
+        }
+}
+
+@media only screen and (max-width: 920px) {
+
+    header {
+        height: 300px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+    }
+
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+
+    .btn {
+        margin-bottom: 30px;
+    }
+
+    .storysec {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .reviews {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .person p {
+        width: 38ch;
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }    
+
+    .text p {
+        width: 550px;
+        margin-bottom: 0;
+    }
+
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 50px;
+        width: 450px;
+    }
+    
+    span {
+        color: var(--blue);
+        padding-left: 190px;
+    }
+    
+    h1 {
+        font-size: 28px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+        font-size: 26px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+    .lightgrey h2 span {
+        padding: 0;
+    }
+    /*sec3 see art*/
+    .darkgrey2 {
+        background-color: var(--dark-grey);
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .darkgrey2 h2 {
+        margin-top: 0;
+    }
+    
+    .collage {
+        height: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    /*text*/
+    h1 {
+        height: 50px;
+        font-size: 24px;
+        margin: 10px auto 10px auto;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
+    }
+
+
+    header {
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .h4-underline {
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        border-bottom: 5px solid #0092CA;
+        border-radius: 3px;
+    }
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .lightgrey h2 span {
+        padding: 0;
+    }
+    .reviews {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .workhours {
+        display: flex;
+        justify-content: space-around;
+        gap: 0;
+    }
+    .mediainfo a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .workhours p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .person p {
+        width: 38ch;
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .collage {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+
+    h1 {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        display: inline-block;
+        margin: auto;
+        margin-top: 0;
+        text-align: center;
+    }
+    
+    h2 {
+        font-size: 32px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 30px auto 20px auto;
+    }
+    
+    p {
+        font-size: 16px;
+        font-family: 'Hind', sans-serif;
+    }
+    
+    footer p {
+        font-size: 16px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    header {
+     height: 250px;
+    }
+
+    .navbar {
+        margin-left: auto;
+        margin-right: auto;
+        align-self: flex-start;
+        order: 3;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        padding: 0 10px;
+        position: relative;
+    }
+    
+    .navbar a {
+        color: #EEEEEE;
+        position: relative;
+        text-decoration: none;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+    /*storysection*/
+    .darkgrey {
+        background-color: var(--dark-grey);
+    }
+    
+    .storysec {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .btn {
+        margin-bottom: 30px;
+    }
+    .reviews {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .h2, .h3 {
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    .h3 {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    
+    .h3-light {
+        font-weight: 200;
+    }
+    
+    .h3-blue {
+        color: #0092CA;
+        font-weight: 200;
+    }
+    
+    .icon {
+        width: 20px;
+        padding-right: 10px;
+    }
+
+    time .workhours {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .h4-underline {
+        margin-right: auto;
+        margin-left: auto;
+        width: 200px;
+        border-bottom: 5px solid #0092CA;
+        border-radius: 3px;
+    }
+
+    .lightgrey h2 span {
+        padding: 0;
+    }
+    .benefits {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0;
+    }
+
+    /*text sec*/
+    .text h2 {
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-top: 30px;
+        width: 200px;
+    }
+
+    span {
+        color: var(--blue);
+        padding-left:0;
+    }
+
+    .text p {
+        width: 380px;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .mediainfo a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .workhours p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .person p {
+        width: 38ch;
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    .collage {
+        width: 350px;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
