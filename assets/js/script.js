@@ -50,8 +50,8 @@ function renderLogo(data) {
   logoEl.classList.add('logo');
 
   const mainHead = document.getElementById("mainHead"); 
-  const childEl = mainHead.firstElementChild; /*at this moment of execution the video is the first child element*/
-  mainHead.insertBefore(logoEl, childEl); /*here we make the content as first child element */
+  const childEl = mainHead.firstElementChild; 
+  mainHead.insertBefore(logoEl, childEl);   /* here we send the received content to go as first child element in the header section */
 };
 
 
