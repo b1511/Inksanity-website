@@ -103,6 +103,13 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar .onview {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    width: 100%;
+}
+
 /*hover effects*/
 .navbar a::after {
     content: '';
@@ -397,3 +404,4 @@ footer {
         padding: 0 10px;
         position: relative;
     }
+}    

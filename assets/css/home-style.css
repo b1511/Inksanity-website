@@ -97,6 +97,13 @@ header {
     padding: 0 40px;
 }
 
+.navbar .onview {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    width: 100%;
+}
+
 .navbar a {
     color: #EEEEEE;
     position: relative;
