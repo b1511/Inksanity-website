@@ -178,8 +178,8 @@ input {
     font-family: 'Hind', sans-serif;
 }
 
-::placeholder {
-    color: #0092CA;
+label {
+    color: #EEEEEE;
     font-family: 'Hind', sans-serif;
 }
 
