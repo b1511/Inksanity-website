@@ -97,6 +97,13 @@ header {
     padding: 0 40px;
 }
 
+.navbar .onview {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    width: 100%;
+}
+
 .navbar a {
     color: #EEEEEE;
     position: relative;
@@ -366,7 +373,7 @@ footer {
    /*text sec*/
 
    h1 {
-       font-size: 46px;
+       font-size: 56px;
    }   
 
    .text h2 {
@@ -872,4 +879,35 @@ footer {
     footer {
         flex-direction: column;
     }
+}
+
+@media only screen and (max-width: 390px) {
+    header {
+        height: 200px;
+       }
+   
+       .navbar {
+           margin-left: auto;
+           margin-right: auto;
+           align-self: flex-start;
+           order: 3;
+       }
+       
+       .navbar li {
+           display: inline-block;
+           padding: 0 5px;
+           position: relative;
+       }
+       
+       .navbar a {
+           color: #EEEEEE;
+           position: relative;
+           text-decoration: none;
+           font-weight: 600;
+           font-family: 'Montserrat', sans-serif;
+       }
+   
+       .navbar a {
+           font-size: 15px;
+       }
 }
