@@ -112,6 +112,18 @@ header {
     font-family: 'Montserrat', sans-serif;
 }
 
+.burger {
+    display: none;
+    margin: 30px 50px;
+}
+
+.line {
+    display: block;
+    margin: 5px auto;
+    border-radius: 5px;
+    background-color: #EEEEEE;
+}
+
 /*hover effects*/
 .navbar a::after {
     content: '';
@@ -384,7 +396,7 @@ footer {
        width: 450px;
    }
 
-   span {
+   .blue {
        color: var(--blue);
        padding-left: 190px;
    }
@@ -407,7 +419,7 @@ footer {
         align-self: flex-start;
     }
 
-    span {
+    .blue {
         padding-left: 0px;
     }
 
@@ -480,7 +492,7 @@ footer {
             width: 450px;
         }
         
-        span {
+        .blue {
             color: var(--blue);
             padding-left: 190px;
         }
@@ -559,7 +571,7 @@ footer {
         width: 450px;
     }
     
-    span {
+    .blue {
         color: var(--blue);
         padding-left: 190px;
     }
@@ -630,6 +642,19 @@ footer {
 
     header {
         height: 300px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .line {
+        width: 25px;
+        height: 3px;
     }
 
     footer p {
@@ -760,6 +785,7 @@ footer {
     .navbar a {
         font-size: 15px;
     }
+
     /*storysection*/
     .darkgrey {
         background-color: var(--dark-grey);
@@ -844,7 +870,7 @@ footer {
         width: 200px;
     }
 
-    span {
+    .blue {
         color: var(--blue);
         padding-left:0;
     }
