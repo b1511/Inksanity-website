@@ -1,3 +1,4 @@
+/*artists*/
 let btnSA = document.getElementById("buttonSA");
 let divSA = document.getElementById("hiddenSA");
 
@@ -19,4 +20,5 @@ btnJH.addEventListener('click', () => {
         divJH.style.display = 'none';
     }
 });
+
 

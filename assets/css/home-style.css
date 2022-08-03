@@ -114,7 +114,8 @@ header {
 
 .burger {
     display: none;
-    margin: 30px 50px;
+    margin: 30px;
+    margin-right: 0;
 }
 
 .line {
@@ -625,8 +626,10 @@ footer {
     h1 {
         height: 50px;
         font-size: 24px;
-        margin: 10px auto 10px auto;
+        margin: 0 auto;
+        margin-top: -60px;
         font-family: 'Montserrat', sans-serif;
+        transform: translateY(-50px);
     }
 
     h2 {
@@ -644,12 +647,26 @@ footer {
         height: 300px;
     }
 
+    .container {
+        width: 180px;
+        height: 100%;
+        z-index: 3;
+    }
+
     .navbar {
+        margin-right: 0;
+        padding-left: 20px;
         display: none;
+    }
+
+    .navbar li {
+        display: block;
+        margin-bottom: 30px;
     }
 
     .burger {
         display: block;
+        cursor: pointer;
     }
 
     .line {
@@ -728,15 +745,13 @@ footer {
 }
 
 @media only screen and (max-width: 550px) {
-
-
     h1 {
         font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         display: inline-block;
         margin: auto;
-        margin-top: 0;
+        margin-top: 50px;
         text-align: center;
     }
     
